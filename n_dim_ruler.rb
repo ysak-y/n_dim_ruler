@@ -1,10 +1,10 @@
 
 
-#	使い方
-#	多重配列を渡すと、そのサイズを各次元ごとに(x y z ...)返してくれます
+#	Usage
+#	Return each size of N-dim array(size_x size_y size_z ...).
 #	
-#	引数
-#	arr: n次元配列
+#	argment
+#	arr: N-dim array
 
 def n_dim_ruler(arr)
 	
@@ -31,7 +31,7 @@ end
 
 if __FILE__ == $0
 	
-	#サンプル
+	#Sample
 	arr = Array.new(3).map{Array.new(3){rand(1..10)}}
 	str = n_dim_ruler(arr)
 	puts str # => "3 3"
